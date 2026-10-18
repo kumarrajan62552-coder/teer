@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1695152952037316');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1695152952037316&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teer Online App - Download Official APK</title>
@@ -74,43 +58,97 @@ src="https://www.facebook.com/tr?id=1695152952037316&ev=PageView&noscript=1"
 
         <!-- App Logo Card -->
         <div class="bg-white p-5 rounded-3xl shadow-lg border border-teal-50/50 mb-6 w-44 h-44 flex items-center justify-center">
-            <!-- SVG Teer Gold Emblem Logo -->
-            <svg class="w-full h-full drop-shadow-md" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Outer Golden Ring -->
-                <circle cx="100" cy="100" r="92" fill="url(#goldGradient)" stroke="#8b6214" stroke-width="4"/>
-                <circle cx="100" cy="100" r="82" fill="#0b3d36" stroke="#f3e5ab" stroke-width="2"/>
-                <!-- Inner Pattern Decorative Border -->
-                <circle cx="100" cy="100" r="76" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="4 3"/>
-                
-                <!-- Bow and Arrow Graphic -->
-                <g transform="translate(100,95) rotate(-45) translate(-100,-95)">
-                    <!-- Bow Curve -->
-                    <path d="M 60,130 Q 100,30 140,130" fill="none" stroke="url(#bowGold)" stroke-width="7" stroke-linecap="round"/>
-                    <!-- Bow String -->
-                    <line x1="60" y1="130" x2="140" y2="130" stroke="#f3e5ab" stroke-width="1.5"/>
-                    <!-- Arrow Line -->
-                    <line x1="100" y1="135" x2="100" y2="50" stroke="url(#bowGold)" stroke-width="4"/>
-                    <!-- Arrow Head -->
-                    <polygon points="100,38 92,55 108,55" fill="#fef08a"/>
-                    <!-- Arrow Fletching -->
-                    <path d="M 94,125 L 100,135 L 106,125" fill="none" stroke="#fef08a" stroke-width="3"/>
+            <!-- SVG Teer Gold Emblem Logo matching user image -->
+            <svg class="w-full h-full drop-shadow-md" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer Golden Bezel & Shadow -->
+                <circle cx="150" cy="150" r="145" fill="url(#outerGoldGrad)" stroke="#785010" stroke-width="2"/>
+                <circle cx="150" cy="150" r="138" fill="#123b32" stroke="#d4af37" stroke-width="3"/>
+
+                <!-- Filigree Pattern Outer Ring Decorative Border -->
+                <circle cx="150" cy="150" r="128" fill="none" stroke="url(#goldBrightGrad)" stroke-width="2"/>
+                <!-- Ornamental Scroll Patterns in Outer Ring -->
+                <g stroke="url(#goldBrightGrad)" stroke-width="2.5" fill="none" opacity="0.85">
+                    <path d="M 150,15 C 160,28 140,32 150,42 M 150,15 C 140,28 160,32 150,42" />
+                    <circle cx="150" cy="22" r="3" fill="#ffd700"/>
+                    <circle cx="100" cy="28" r="4"/> <circle cx="200" cy="28" r="4"/>
+                    <circle cx="60" cy="52" r="4"/> <circle cx="240" cy="52" r="4"/>
+                    <circle cx="30" cy="95" r="4"/> <circle cx="270" cy="95" r="4"/>
+                    <circle cx="18" cy="150" r="4"/> <circle cx="282" cy="150" r="4"/>
+                    <path d="M 100,20 Q 120,38 100,42 M 200,20 Q 180,38 200,42" />
+                    <path d="M 50,60 Q 75,70 65,90 M 250,60 Q 225,70 235,90" />
+                    <path d="M 25,120 Q 45,135 30,155 M 275,120 Q 255,135 270,155" />
                 </g>
 
-                <!-- Text Ribbon/Banner -->
-                <path d="M 35 130 Q 100 160 165 130 Q 100 175 35 130 Z" fill="url(#goldGradient)" stroke="#78520d" stroke-width="1"/>
-                <text x="100" y="147" font-family="Arial, sans-serif" font-weight="900" font-size="14" fill="#0b3d36" text-anchor="middle" letter-spacing="1">TEER ONLINE</text>
+                <!-- Inner Dark Teal Circle Background -->
+                <circle cx="150" cy="150" r="110" fill="url(#tealBgGrad)" stroke="url(#goldBrightGrad)" stroke-width="3"/>
 
-                <!-- Gradients -->
+                <!-- Target Rings at Top -->
+                <g opacity="0.95">
+                    <circle cx="150" cy="90" r="32" fill="none" stroke="url(#goldBrightGrad)" stroke-width="4"/>
+                    <circle cx="150" cy="90" r="22" fill="none" stroke="url(#goldBrightGrad)" stroke-width="3"/>
+                    <circle cx="150" cy="90" r="12" fill="none" stroke="url(#goldBrightGrad)" stroke-width="3"/>
+                    <circle cx="150" cy="90" r="4" fill="#fff7d1"/>
+                </g>
+
+                <!-- Horizontal Recurve Bow -->
+                <g filter="drop-shadow(0px 3px 2px opacity(0.5))">
+                    <!-- Bow Limb Body Left & Right -->
+                    <path d="M 60,140 C 80,120 110,132 150,132 C 190,132 220,120 240,140 C 248,144 246,148 240,146 C 220,128 190,140 150,140 C 110,140 80,128 60,146 C 54,148 52,144 60,140 Z" fill="url(#bowGoldGrad)" stroke="#61410b" stroke-width="1.5"/>
+                    <!-- Bow Tips (Recurve Scroll Detail) -->
+                    <path d="M 60,140 C 52,136 50,146 58,145 M 240,140 C 248,136 250,146 242,145" fill="none" stroke="url(#goldBrightGrad)" stroke-width="3"/>
+                    <!-- Bow String -->
+                    <polyline points="58,145 150,210 242,145" fill="none" stroke="#fff3b0" stroke-width="1.8" opacity="0.9"/>
+                    <!-- Center Grip Handle Detail -->
+                    <rect x="142" y="131" width="16" height="11" rx="2" fill="url(#outerGoldGrad)" stroke="#523605" stroke-width="1"/>
+                </g>
+
+                <!-- Vertical Arrow Pointing Up into Target -->
+                <g filter="drop-shadow(0px 2px 2px opacity(0.4))">
+                    <!-- Arrow Shaft -->
+                    <line x1="150" y1="220" x2="150" y2="82" stroke="url(#goldBrightGrad)" stroke-width="3.5" stroke-linecap="round"/>
+                    <!-- Arrow Head (In Center Target) -->
+                    <polygon points="150,72 143,90 150,86 157,90" fill="#fff5be" stroke="#785010" stroke-width="1"/>
+                    <!-- Arrow Fletching (Bottom Feather) -->
+                    <path d="M 143,205 L 150,190 L 157,205 M 143,215 L 150,200 L 157,215" fill="none" stroke="url(#goldBrightGrad)" stroke-width="2.5"/>
+                </g>
+
+                <!-- Curved Golden Ribbon/Banner for Text -->
+                <path d="M 52,205 Q 150,265 248,205 Q 242,250 150,270 Q 58,250 52,205 Z" fill="url(#bannerGoldGrad)" stroke="#6b470a" stroke-width="2"/>
+                <path d="M 58,210 Q 150,260 242,210" fill="none" stroke="#fff8d6" stroke-width="1" opacity="0.7"/>
+
+                <!-- Curved Text "TEER ONLINE" along Path -->
+                <path id="textArc" d="M 60,228 Q 150,275 240,228" fill="none"/>
+                <text font-family="'Arial Black', 'Inter', sans-serif" font-weight="900" font-size="20" fill="#0c352d" letter-spacing="2">
+                    <textPath href="#textArc" startOffset="50%" text-anchor="middle">TEER ONLINE</textPath>
+                </text>
+
+                <!-- Gradients Definition -->
                 <defs>
-                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <linearGradient id="outerGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stop-color="#ffe885"/>
-                        <stop offset="50%" stop-color="#d4af37"/>
-                        <stop offset="100%" stop-color="#9a721d"/>
+                        <stop offset="30%" stop-color="#d4af37"/>
+                        <stop offset="70%" stop-color="#aa8014"/>
+                        <stop offset="100%" stop-color="#5a3d03"/>
                     </linearGradient>
-                    <linearGradient id="bowGold" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <linearGradient id="goldBrightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#fff5bd"/>
+                        <stop offset="50%" stop-color="#d4af37"/>
+                        <stop offset="100%" stop-color="#8c620d"/>
+                    </linearGradient>
+                    <linearGradient id="tealBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#0a4d42"/>
+                        <stop offset="50%" stop-color="#07362e"/>
+                        <stop offset="100%" stop-color="#031e19"/>
+                    </linearGradient>
+                    <linearGradient id="bowGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop offset="0%" stop-color="#fef08a"/>
                         <stop offset="50%" stop-color="#d4af37"/>
-                        <stop offset="100%" stop-color="#855810"/>
+                        <stop offset="100%" stop-color="#8b6010"/>
+                    </linearGradient>
+                    <linearGradient id="bannerGoldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#ffec99"/>
+                        <stop offset="40%" stop-color="#e3b93b"/>
+                        <stop offset="100%" stop-color="#8f630e"/>
                     </linearGradient>
                 </defs>
             </svg>
@@ -127,7 +165,7 @@ src="https://www.facebook.com/tr?id=1695152952037316&ev=PageView&noscript=1"
         </p>
 
         <!-- Main Download Button -->
-        <a href="https://smlanding.online/teer/" target="_blank" rel="noopener noreferrer" class="w-full bg-brand-dark hover:bg-brand-darkHover text-white font-bold text-lg sm:text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 transform active:scale-95 flex items-center justify-center gap-3 mb-3 group">
+        <a href="https://app.teeronline.fun" target="_blank" rel="noopener noreferrer" class="w-full bg-brand-dark hover:bg-brand-darkHover text-white font-bold text-lg sm:text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 transform active:scale-95 flex items-center justify-center gap-3 mb-3 group">
             <i class="fa-solid fa-arrow-down text-xl group-hover:translate-y-0.5 transition-transform"></i>
             <span>DOWNLOAD APK</span>
         </a>
